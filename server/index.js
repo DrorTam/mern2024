@@ -25,7 +25,9 @@ app.use(express.static(path.join(__dirname, '/client/dist')))
 // Render client for any path
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, '/client/dist/index.html')))
 
-const port = 5555;
+const port = process.env.PORT || 5555;
+
+
 
 mongoose
   .connect(`${process.env.mongoDBURL}`)
