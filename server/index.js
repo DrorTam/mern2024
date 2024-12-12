@@ -33,8 +33,8 @@ mongoose
   .connect(`${process.env.mongoDBURL}`)
   .then(() => {
     console.log("We are connected to database");
-    app.listen(port, () => {
-      console.log(`App is listening to port : ${port}`);
+    app.listen(port, '0.0.0.0',  () => {
+      console.log(`server running on http://0.0.0.0:${port}`);
     });
   })
   .catch((err) => {
