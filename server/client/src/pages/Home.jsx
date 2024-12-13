@@ -24,7 +24,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5555/movies")
+      .get("https://mern2024-f.onrender.com/movies")
       .then((res) => {
         setMovies(res.data.data);
         setLoading(false);
