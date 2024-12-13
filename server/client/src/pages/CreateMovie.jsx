@@ -26,7 +26,7 @@ const CreateMovie = () => {
 
     setLoading(true);
     axios
-      .post("http://localhost:5555/movies", data)
+      .post("https://mern2024-f.onrender.com/movies", data)  
       .then(() => {
         setLoading(false);
         enqueueSnackbar("!Movie Created Successfully", { variant: "success" });
