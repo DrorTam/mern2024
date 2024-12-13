@@ -12,7 +12,7 @@ const ShowMovie = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/movies/${id}`)
+      .get(`https://mern2024-f.onrender.com/movies/${id}`)
       .then((res) => {
         setMovie(res.data);
         setLoading(false);
