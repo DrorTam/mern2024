@@ -14,7 +14,7 @@ const DeleteMovie = () => {
   const handleDeleteMovie = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5555/movies/${id}`)
+      .delete(`https://mern2024-f.onrender.com/movies/${id}`)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("!Movie Deleted Successfully", { variant: "success" });
