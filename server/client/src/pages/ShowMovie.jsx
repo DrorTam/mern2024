@@ -9,11 +9,7 @@ const ShowMovie = () => {
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
 
-   const myStyle = {
-    backgroundImage: "url(/cinema93.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
+   
 
   useEffect(() => {
     setLoading(true);
@@ -30,7 +26,7 @@ const ShowMovie = () => {
   }, []);
 
   return (
-    <div style={myStyle} className="p-4">
+    <div className="p-4">
       <BackButton />
       <h1 className="underline text-3xl my-4">
         <b className="bg-sky-300">פרטי הסרט</b>
