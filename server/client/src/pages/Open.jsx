@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Open = () => {
   const myStyle = {
-    backgroundImage: "url(/cinema9.jpg)",
+    backgroundImage: "url(cinema9.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
