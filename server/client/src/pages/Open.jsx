@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image1 from './cinema9.jpg'
+
 
 const Open = () => {
   const myStyle = {
@@ -11,7 +11,7 @@ const Open = () => {
 
   return (
     <>
-      <img src={image1} style={myStyle} alt="image" />
+      <img src={"cinema9.jpg"} style={myStyle} alt="image" />
       <div
         className="h-screen flex flex-col items-center justify-center"
         
