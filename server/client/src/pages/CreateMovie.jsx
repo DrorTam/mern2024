@@ -15,6 +15,12 @@ const CreateMovie = () => {
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
 
+  const myStyle = {
+    backgroundImage: "url(/cinema93.jpg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
+
   const handleSaveMovie = () => {
     const data = {
       title,
@@ -40,7 +46,7 @@ const CreateMovie = () => {
   };
 
   return (
-    <div className="p-4">
+    <div style={myStyle} className="p-4">
       <BackButton />
       <h1 className="underline text-3xl my-4">
         <b className="bg-sky-300">הוספת סרט</b>
