@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "server/client/cinema9.jpg"
+import image from "./server/client/cinema9.jpg"
 
 
 const Open = () => {
