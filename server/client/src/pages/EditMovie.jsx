@@ -21,7 +21,7 @@ const EditMovie = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://mern2024-f.onrender.com/movies/${id}`)
+      .get(`https://mern2024dt.onrender.com/movies/${id}`)
       .then((res) => {
         setAuthor(res.data.author);
         setCategory(res.data.category);
@@ -48,7 +48,7 @@ const EditMovie = () => {
 
     setLoading(true);
     axios
-      .put(`https://mern2024-f.onrender.com/movies/${id}`, data)
+      .put(`https://mern2024dt.onrender.com/movies/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("!Movie Edited Successfully", { variant: "success" });
