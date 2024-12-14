@@ -1,21 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "server/client/cinema9.jpg"
 
 
 const Open = () => {
-  const myStyle = {
-    
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-
-  return (
+ return (
     <>
-      <img src={"cinema9.jpg"} style={myStyle} alt="image" />
-      <div
+       <div
+        style={{ backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover",  backgroundPosition: "center" }}
         className="h-screen flex flex-col items-center justify-center"
-        
-      >
+       >
         <div className="text-center text-7xl font-extrabold">
           <p className="text-black">"Welocme To Movie Store"</p>
         </div>
