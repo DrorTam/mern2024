@@ -11,6 +11,14 @@ const DeleteMovie = () => {
   const { id } = useParams();
   const { enqueueSnackbar } = useSnackbar();
 
+   const myStyle = {
+    height: "100%",
+    width: "100%",
+    backgroundImage: "url(/cinema93.jpg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
+
   const handleDeleteMovie = () => {
     setLoading(true);
     axios
@@ -28,19 +36,19 @@ const DeleteMovie = () => {
   };
 
   return (
-    <div className="p-4">
+    <div style={myStyle} className="p-4">
       <BackButton />
       <h1 className="underline text-3xl my-4">
         <b className="bg-sky-300">מחיקת סרט</b>
       </h1>
       {loading ? <Spinner /> : ""}
-      <div className="flex flex-col items-center border-4 border-sky-500 rounded-xl w-[600px] p-8 mx-auto">
-        <h3 className="text-2xl bg-sky-300">
+      <div className="flex flex-col items-center justify-center border-4 border-sky-500 rounded-xl w-[600px] h-[430px] p-8 mx-auto">
+        <h3 className="items-center text-2xl bg-sky-300">
           אתה בטוח שאתה רוצה למחוק את הסרט ?
         </h3>
 
         <button
-          className="p-4 bg-green-600 text-white m-8 w-full"
+          className="items-center p-4 bg-green-600 text-white m-8 w-full"
           onClick={handleDeleteMovie}
         >
           כן, מחק !
