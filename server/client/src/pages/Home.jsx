@@ -21,11 +21,7 @@ const Home = () => {
     navigate("/");
   };
 
-  const myStyle = {
-    backgroundImage: "url(/cinema93.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
+  
 
   useEffect(() => {
     setLoading(true);
@@ -42,7 +38,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div style={myStyle} className="p-4">
+    <div className="p-4">
       <button
         className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg font-bold border-2 border-black"
         onClick={handleOut}
