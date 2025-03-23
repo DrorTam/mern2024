@@ -11,7 +11,7 @@ const Open = () => {
         className="h-screen flex flex-col items-center justify-center"
        >
         <div className="text-center text-7xl font-extrabold">
-          <p className="text-black">"Welocme To Movie Store"</p>
+          <p className="text-black">"Welcome To Movie Store"</p>
         </div>
         <div>
           <Link to="/movies">
